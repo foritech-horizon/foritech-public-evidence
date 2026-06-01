@@ -1,0 +1,11 @@
+# Never commit
+*.key
+*.pem
+*.env
+config.json
+secrets/
+core/
+verification_engine/
+internal_api/
+*.secret
+*.private
