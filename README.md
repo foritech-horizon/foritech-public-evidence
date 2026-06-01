@@ -1,10 +1,11 @@
 # Foritech Public Evidence Repository
 
-**Project:** FORISEC — HORIZON-CL3-2026-02-CS-ECCC-01  
+**Project Concept:** FORISEC  
+**Target Call:** HORIZON-CL3-2026-02-CS-ECCC-01  
 **Coordinator:** Foritech (foritech.bg | forisec.eu)  
-**Purpose:** Public verification evidence for the Foritech Secure System (TRL 7)
+**Purpose:** Public technical evidence supporting TRL 7 deployment claims.
 
-This repository contains **publicly verifiable evidence** of the Foritech verification platform's performance, security validation, and compliance status.
+Performance metrics and test results are generated from automated CI benchmark and validation workflows. Raw benchmark artifacts and validation reports are available upon request.
 
 ## Contents
 
@@ -17,7 +18,7 @@ This repository contains **publicly verifiable evidence** of the Foritech verifi
 | `architecture/` | System architecture diagrams and FTECH container specification |
 | `trl-evidence/` | TRL 7 evidence documentation |
 
-## Key Metrics (verified via GitHub Actions CI)
+## Key Metrics (generated via GitHub Actions CI)
 
 | Metric | Result |
 |--------|--------|
@@ -28,7 +29,10 @@ This repository contains **publicly verifiable evidence** of the Foritech verifi
 | AFL++ fuzz crashes | 0 |
 | Test coverage | 115 pass, 0 fail |
 
-## Verified On
+> Benchmark performed on commodity hardware (Intel i7-5820K, 2014).
+> Production deployments on modern infrastructure are expected to achieve proportionally higher throughput.
+
+## Validated On
 
 - Ubuntu 24.04 LTS
 - Industrial ARM64 gateway platform
