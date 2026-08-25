@@ -42,11 +42,11 @@ This record is **not** acceptance of the final cross-WP FORISEC system, of any o
 |---|---|---|---|
 | `trl-evidence/FORISEC_TRL5_EVIDENCE_MANIFEST.md` | `foritech-public-evidence` commit `aedd4450d5b79a03c96b547580dd9c97a9697224` | Inventories pre-existing, already-recorded evidence for the M1 provenance-to-verification chain | Verified present, commit matches expected anchor |
 | `trl-evidence/FORISEC_TRL5_RELEVANT_ENVIRONMENT_DEMONSTRATION.md` | `foritech-public-evidence` commit `f49f4c7b498a43fdea5ec6ec9c3829de63888a34` | Real, reproducible execution of the minimal chain in a relevant (loopback, non-production) environment | Verified present, commit matches expected anchor prefix `f49f4c7` |
-| `trl-evidence/FORISEC_TRL5_LIMITATIONS_AND_GAPS.md` | `foritech-public-evidence` commit `1ae6cef9b0b4305a2fabdf1f169ed51e9f6ebd12` (correction commit; the file was created at commit `71c8403595e48ae2f6dc6df371cdab23a7656134`, which remains its original creation commit but is superseded by this correction commit for acceptance purposes) | Scope-control record separating demonstrated evidence from planned/excluded future work | Verified present, commit matches the current corrected state; confirmed the document contains no invented milestone identifiers, no reference to drafting history, and no statement that the integrated FORISEC system holds a completed TRL 4; stale WP2 task/deliverable numbering (from a superseded task register) corrected to the current WP2 T2.6/D2.6 and WP5 D5.4 identifiers per the current `04_proposal` Part B (`EXCELLENCE.md`, `IMPACT.md`, `IMPLEMENTATION.md`) |
+| `trl-evidence/FORISEC_TRL5_LIMITATIONS_AND_GAPS.md` | `foritech-public-evidence` commit `39f6d147ccef2d35a7033fe2f629685e26ec8a53` (correction commit; the file was created at commit `71c8403595e48ae2f6dc6df371cdab23a7656134` and first re-anchored at `1ae6cef9b0b4305a2fabdf1f169ed51e9f6ebd12`, both of which remain historical creation/correction commits superseded by this latest correction commit for acceptance purposes) | Scope-control record separating demonstrated evidence from planned/excluded future work | Verified present, commit matches the current corrected state; confirmed the document contains no invented milestone identifiers, no reference to drafting history, and no statement that the integrated FORISEC system holds a completed TRL 4; WP2/WP5 task and deliverable numbering corrected to T2.6/D2.6/D5.4, and MS9 restored as the valid FPGA pilot-inclusion decision gate, per the final Part B `Tpl_Application_Form_Part_B_FORISEC_20260825.md` and the current `proposal_compression_workspace` `EXCELLENCE.md`/`IMPACT.md`/`IMPLEMENTATION.md` |
 | `docs/baselines/FORISEC_M1_TECHNICAL_BASELINE.md` | `foritech-cl3-2026` commit `31ceb249a138e42a72eab6881409c31a86bcbcf8` (last commit touching this file; repository HEAD `e6c52cbaab2cf8987a888ee4d83129551d7256e3`, working tree clean) | Proposal-governance freeze of the M1 background/starting-asset boundary, used to cross-check claim boundaries in this record | Verified present, repository clean |
 | `foritech-secure-system` | commit `2291f053c5beb69d170291782c5e51cdcd99764e` (HEAD, main) | Verification Core, Managed Verification, canonical fixture generator, ADRs | Verified clean working tree before and after evidence preparation |
 | `forisec-integration-pack` | commit `dba998ab3b2fe43a907d4885da857a80efd72786` (HEAD, main); annotated tag `v1.0.0` (tag object `a81f05494736c9e8861abb3829b2bfa4a55d2ae7`, target commit `dba998ab3b2fe43a907d4885da857a80efd72786`) | Frozen verification contract, JSON schemas, fixtures | Verified clean working tree; tag confirmed annotated and correctly targeted |
-| `foritech-public-evidence` | commit `1ae6cef9b0b4305a2fabdf1f169ed51e9f6ebd12` (main, immediately before finalisation of this acceptance record) | Repository hosting all four TRL 5 evidence documents | Verified clean working tree |
+| `foritech-public-evidence` | commit `39f6d147ccef2d35a7033fe2f629685e26ec8a53` (main; repository state immediately before finalisation of this acceptance record) | Repository hosting all four TRL 5 evidence documents | Verified clean working tree |
 
 This is described as a **candidate frozen evidence set**. No final repository tag has been created over these commits; tagging remains explicitly unauthorised until owner approval (see §9).
 
@@ -82,7 +82,7 @@ None of the above is treated as a defect in the demonstrated chain; each reflect
 
 | Excluded item | Reason | Future route |
 |---|---|---|
-| Completed FPGA implementation | No completed FORISEC FPGA implementation exists at M1 | WP4 (Logiicdev) T4.1, T4.3, T4.4 |
+| Completed FPGA implementation | No completed FORISEC FPGA implementation exists at M1 | WP4 T4.1/T4.3/T4.4/T4.5; conditional pilot-inclusion decision at MS9 (M29) |
 | Formal RTL model/proof | No formal FORISEC RTL model or final proof exists | WP4 (Logiicdev) T4.5 |
 | RTU embedded and industrial-device validation | No industrial embedded integration or constrained-device performance evidence exists at M1 | WP3 (RTU) T3.1, T3.4 |
 | SOLARIX operational pilot | The relevant-environment demonstration is not an operational pilot | WP5 (Solarix) T5.1–T5.4 |
@@ -97,7 +97,7 @@ None of the above is treated as a defect in the demonstrated chain; each reflect
 
 For FPGA, this record uses exactly the following boundary, consistent with the limitations record:
 
-*"FPGA acceptance in an independent external test environment must not be described as SOLARIX deployment. Inclusion in the SOLARIX pilot remains subject to a separate documented WP4/WP5 technical-compatibility and risk decision before pilot integration."*
+*"FPGA acceptance in an independent external test environment must not be described as SOLARIX deployment. Inclusion in the SOLARIX pilot remains subject to the separate MS9 decision -- Embedded Configurations Qualified and FPGA Inclusion Decision Recorded (M29) -- based on technical compatibility, D3.4 acceptance and risk. This does not make successful external FPGA acceptance dependent on SOLARIX deployment."*
 
 ## 7. Decision
 
