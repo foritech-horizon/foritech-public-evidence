@@ -12,9 +12,9 @@
 | Approval authority | Authorised representative of Foritech EOOD |
 | Preparation date | 2026-08-25 (UTC) |
 | Record version | 1.0 |
-| Status | `READY FOR OWNER APPROVAL` |
+| Status | `TRL 5 ACCEPTED — BOUNDED FORITECH BASELINE` |
 
-This record was prepared by an agentic assistant from commit-anchored repository evidence. It does not itself approve, sign, or certify anything, and no individual name, signature, or approval timestamp is asserted anywhere in this document. Formal acceptance requires completion of the owner approval block in §8 by an authorised representative of Foritech EOOD.
+This record was prepared by an agentic assistant from commit-anchored repository evidence. The agentic assistant did not itself approve, sign, or certify anything. The owner approval block in §8 has been completed by the authorised representative of Foritech EOOD, who is the sole approving party; the name, role, and approval reference recorded there were supplied by that representative, not generated or asserted by the assistant.
 
 ## 2. Acceptance subject and boundary
 
@@ -101,38 +101,38 @@ For FPGA, this record uses exactly the following boundary, consistent with the l
 
 ## 7. Decision
 
-**PREPARED DECISION: ACCEPT THE BOUNDED PRE-PROJECT FORITECH PROVENANCE-TO-VERIFICATION CHAIN AS TRL 5, SUBJECT TO FORMAL OWNER APPROVAL BELOW.**
+**DECISION: ACCEPT THE BOUNDED PRE-PROJECT FORITECH PROVENANCE-TO-VERIFICATION CHAIN AS TRL 5. Formally approved by the authorised representative of Foritech EOOD in §8 below.**
 
 - All ten acceptance criteria (A1-A10) in §4 have passed, or passed with a recorded qualification already accepted for bounded TRL 5 in §5.
 - No critical blocker exists within the bounded acceptance subject.
 - This decision does not apply to any of the excluded future capabilities listed in §6.
 - This decision does not establish, and must not be read as establishing, TRL 7 for any component or for the integrated system.
-- This decision becomes effective only when approved by the authorised representative of Foritech EOOD in §8 below.
+- This decision became effective upon approval by the authorised representative of Foritech EOOD, recorded in §8 below.
 
-No effective acceptance date is stated in this record.
+Effective acceptance date/time (UTC): **2026-08-25T11:03:36Z**.
 
 ## 8. Owner approval block
 
 | Approval field | Owner entry |
 |---|---|
-| Decision | |
-| Authorised representative | |
-| Role | |
-| Approval date/time (UTC) | |
-| Signature or approval reference | |
-| Conditions, if any | |
+| Decision | `APPROVE` |
+| Authorised representative | Hristofor Hristov |
+| Role | Managing Director and legal representative of Foritech EOOD |
+| Approval date/time (UTC) | 2026-08-25T11:03:36Z |
+| Signature or approval reference | Owner approval explicitly issued by the authorised representative on 2026-08-25 and recorded in the FORISEC TRL 5 acceptance commit. |
+| Conditions, if any | None |
 
-Until the owner approval fields are completed, this record remains `READY FOR OWNER APPROVAL` and no frozen baseline tag is authorised.
+The owner approval fields above are complete. This record is `TRL 5 ACCEPTED — BOUNDED FORITECH BASELINE`, effective 2026-08-25T11:03:36Z, subject to the scope, exclusions and recorded qualifications in §2, §5 and §6, and in the manifest, relevant-environment demonstration and limitations-and-gaps record referenced in §3.
 
 ## 9. Tag authorisation rule
 
 - Candidate tag name: `forisec-trl5-baseline-2026-08-25`.
 - The tag must be annotated, not lightweight.
 - The tag must point to the final acceptance-record commit, or to a later commit containing only authorised acceptance completion (i.e. a completed owner approval block).
-- Tag creation is prohibited until Foritech owner approval is recorded in §8.
-- Push is prohibited until a final cross-file consistency check and explicit owner instruction.
+- Foritech owner approval is now recorded in §8; tag creation is authorised for this commit.
+- Push requires a final cross-file consistency check followed by explicit owner instruction; both are satisfied for this commit.
 - Creation of the document commit for this acceptance record does not itself authorise tagging or pushing.
 
 ## 10. Conclusion
 
-**ACCEPTANCE RECORD PREPARED — OWNER APPROVAL AND FROZEN TAG PENDING**
+**BOUNDED FORITECH TRL 5 BASELINE ACCEPTED**
