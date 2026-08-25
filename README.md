@@ -1,9 +1,9 @@
 # Foritech Public Evidence Repository
 
-**Project Concept:** FORISEC  
-**Target Call:** HORIZON-CL3-2026-02-CS-ECCC-01  
-**Coordinator:** Foritech (foritech.bg | forisec.eu)  
-**Purpose:** Public technical evidence supporting TRL 7 deployment claims.
+**Project Concept:** FORISEC
+**Target Call:** HORIZON-CL3-2026-02-CS-ECCC-01
+**Coordinator:** Foritech (foritech.bg | forisec.eu)
+**Purpose:** Public technical evidence supporting the Foritech Secure System's starting technical baseline (**Starting TRL 5**) and performance/security characteristics measured against the **Target TRL 7** thresholds FORISEC aims to reach through the project.
 
 Performance metrics and test results are generated from automated CI benchmark and validation workflows. Raw benchmark artifacts and validation reports are available upon request.
 
@@ -13,10 +13,8 @@ Performance metrics and test results are generated from automated CI benchmark a
 |--------|----------|
 | `benchmarks/` | Performance measurements — ML-DSA-65 signing, verification throughput, payload latency |
 | `test-results/` | CI test suite results — 115 pass, 0 fail |
-| `compliance/` | NIS2, CRA, FIPS 203/204 compliance checklist |
-| `kpi/` | KPI vs TRL matrix |
-| `architecture/` | System architecture diagrams and FTECH container specification |
-| `trl-evidence/` | TRL 7 evidence documentation |
+| `kpi/` | KPI matrix — component-level measurements against TRL 7 target thresholds |
+| `fuzzing/` | Coverage-guided fuzzing campaign (Atheris), supersedes earlier non-instrumented AFL++ results |
 
 ## Key Metrics (generated via GitHub Actions CI)
 
@@ -26,7 +24,7 @@ Performance metrics and test results are generated from automated CI benchmark a
 | Full verification | 0.1 ms avg |
 | Throughput | 4,075 verifications/sec |
 | Container overhead | 7,772 bytes (constant) |
-| AFL++ fuzz crashes | 0 |
+| Coverage-guided fuzz crashes (Atheris, ~5.36B execs) | 0 (after remediation — see `fuzzing/`) |
 | Test coverage | 115 pass, 0 fail |
 
 > Benchmark performed on commodity hardware (Intel i7-5820K, 2014).
@@ -37,6 +35,10 @@ Performance metrics and test results are generated from automated CI benchmark a
 - Ubuntu 24.04 LTS
 - Industrial ARM64 gateway platform
 - Debian 12
+
+## TRL positioning
+
+This repository documents component-level performance and security-testing evidence for the Foritech Secure System as it currently exists (**Starting TRL 5**). These measurements support FORISEC's proposal to extend and validate the system toward **integrated TRL 7** through embedded validation, hardware acceleration, formal security analysis and an operational pilot — TRL 7 is the project's target, not a status already reached. Meeting or exceeding an individual performance threshold below does not, by itself, constitute an integrated TRL 7 claim.
 
 ## What is NOT here
 
